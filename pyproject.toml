@@ -1,5 +1,0 @@
-[tool.vercel]
-entrypoint = "portfolio_project.wsgi:application"
-
-[tool.vercel.scripts]
-build = "python manage.py"
