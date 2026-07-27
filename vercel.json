@@ -1,9 +1,6 @@
 {
     "builds":[
         {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build"
-    },{
         "src":"portfolio_project/wsgi.py",
         "use":"@vercel/python" ,
         "config":{"maxlambdasize":"15mb","runtime":"python3.14.6"}
