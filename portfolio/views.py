@@ -6,6 +6,12 @@ from django.conf import settings
 
 # Create your views here.
 
+def style_view(request):
+    return render(request , '/portfolio/static/css/style.css' )
+def js_view(request):
+    return render(request , '/portfolio/static/js/script.js' )
+def static_view(request):
+    return render(request , '/portfolio/static/' )
 def home_view(request):
     return render(request , 'home.html' )
 
