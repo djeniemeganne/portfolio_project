@@ -1,0 +1,104 @@
+    body {
+    padding-top: 70px;
+           }
+ /* home */
+.hero {
+    height: 100vh;
+    background: radial-gradient(
+        circle at top right,
+        rgba(250, 3, 3, 0.35),
+        transparent 40%
+    );
+    background-color: rgb(181, 174, 174);
+}
+.card-body {
+background-color: rgb(181, 174, 174);
+}
+.card{
+    border: none;
+}
+.img {
+    border: none;
+}
+
+/* about */
+.about {
+    height: 100vh;
+    background: radial-gradient(
+        circle at top right,
+        rgba(250, 3, 3, 0.35),
+        transparent 40%);
+        background-color: rgb(181, 174, 174);
+   }
+.card-about {
+    border: none;
+}
+.card{
+    border: none;
+}
+
+/* projets */
+.project {
+/*height: 100vh;*/
+    background: radial-gradient(
+        circle at top right,
+        rgba(250, 3, 3, 0.35),
+        transparent 40%);
+        background-color: rgb(181, 174, 174);
+}
+.project-section{
+    background: #FF4500;
+    padding-top: 120px ;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.project-section .card{
+   border-radius: 15px;
+   border: none;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+   transition: transform 0.3s;
+}
+.project-section .card:hover {
+    transform: translateY(-5px);
+}
+.project-section .card-img-top{
+   height: 200px;
+   object-fit: cover;
+}
+
+
+/* contact */
+.contact{
+    background: radial-gradient(
+        circle at top right,
+        rgba(250, 3, 3, 0.35),
+        transparent 40%);
+       background-color: rgb(181, 174, 174);
+   }
+.card-contact {
+     background-color: rgb(190, 189, 189);
+} 
+.form-control{
+     background-color: rgb(181, 174, 174);
+} 
+
+/* competence */
+.competence{
+     background: radial-gradient(
+        circle at top right,
+        rgba(250, 3, 3, 0.35),
+        transparent 40%);
+       background-color: rgb(181, 174, 174);
+   }
+.card-competence{
+       background-color:blue;
+}
+/* .competence-section{
+    background: #FF4500;
+    padding-top: 120px ;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+} */
+
