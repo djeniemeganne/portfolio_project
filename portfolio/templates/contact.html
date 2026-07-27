@@ -1,4 +1,4 @@
-<section id="contact" class="contact">
+{% comment %} <section id="contact" class="contact">
   <h1 class="text-center mb-4 py-5">contact</h1>
   <h6 class="text-center mb-4">Vous souhaitez en savoir plus ou discuter d'un projet ? Parlons-en ensemble.</h6>
 
@@ -6,15 +6,15 @@
     <p id="success-message" class="text-success text-center">{{ success }}</p>
   {% endif %}
   <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    let message = document.getElementById("success-message");
-
-    if (message) {
+    document.addEventListener('DOMContentLoaded', function () {
+      let message = document.getElementById('success-message')
+    
+      if (message) {
         setTimeout(function () {
-            message.style.display = "none";
-        }, 5000);
-    }
-});
+          message.style.display = 'none'
+        }, 5000)
+      }
+    })
   </script>
   <div class="container d-flex justify-content-center pt-5">
     <div class="card-contact px-4" style="width: 25rem ;">
@@ -53,4 +53,60 @@
       <!-- </div> -->
     </div>
   </div>
-</section>
+</section> {% endcomment %}
+
+<article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+  <section class="mapbox" data-mapbox>
+    <ul class="contacts-list">
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Email</p>
+          <a href="mailto:megannemenekdem@gmail.com" class="contact-link">megannemenekdem@gmail.com</a>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Telephone</p>
+          <a href="tel:+237658600219" class="contact-link">+237 658 60 02 19</a>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="icon-box">
+          <ion-icon name="logo-github"></ion-icon>
+        </div>
+        <div class="contact-info">
+          <p class="contact-title">Githubs</p>
+          <a href="https://github.com/djeniemeganne" target="_blank" class="contact-link">@djeniemeganne</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="contact-form">
+    <h3 class="h3 form-title">Laissez-moi un message</h3>
+    <form method="POST" action="{% url 'contact' %}" class="form" data-form>
+      {% csrf_token %}
+      <div class="input-wrapper">
+        <input type="text" name="nom" class="form-input" id="inputNom" placeholder="Votre nom" required data-form-input />
+        <input type="text" name="prenom" class="form-input" id="inputPrénom" placeholder="Votre Prénom" required data-form-input />
+      </div>
+      <div class="input-wrapper">
+        <input type="email" name="email" id="inputEmail" class="form-input" placeholder="Adresse e-mail" required data-form-input />
+        <input type="text" name="sujet" id="inputSujet" class="form-input" placeholder="A quel sujet ?" required data-form-input />
+      </div>
+      <textarea name="message" class="form-input" id="exampleFormControlMessage" placeholder="Laissez un message..." required data-form-input></textarea>
+      <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Envoyer</span>
+      </button>
+    </form>
+  </section>
+</article>

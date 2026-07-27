@@ -1,11 +1,68 @@
-<section id="about" class="about">
-  <div class="container py-5">
-    <div class="card-about" style="width: 55rem;">
-      <div class="card-body">
-        <h1 class="text-center mb-4 py-5">About</h1>
-        <h5 class="card-title ml-5">Bonjour, Je m'appelle MENEKDEM DJENIE ! âgée de 22 ans et suis titulaire d'une licence en génie logiciel à l'institut NANFAH.Passionnée par la création de sites modernes, performants et intuitifs.J'aime concevoir des applications web qui offrent une bonne expérience utilisateur et répondent à des besoins concrets.</h5>
-        <h5 class="card-text ml-5">Je me forme activement sur les technologies de la programmation web en réalisant régulièrement des projets personnels ou pour des indépendants. Je t'invite à jetter un œil à mes projets pour découvrir mon univers et mes dernières réalisations.</h5>
-      </div>
-    </div>
-  </div>
-</section>
+<article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">A Propos de moi</h2>
+        </header>
+        <section class="about-text">
+          <p>
+           Bonjour, Je m'appelle <strong>MENEKDEM DJENIE</strong> ! âgée de 22 ans et suis titulaire d'une licence en génie logiciel à l'institut NANFAH.Passionnée par la création de sites modernes, performants et intuitifs.J'aime concevoir des applications web qui offrent une bonne expérience utilisateur et répondent à des besoins concrets.
+          </p>
+          <p>
+            Je me forme activement sur les technologies de la programmation web en réalisant régulièrement des projets personnels ou pour des indépendants. Je t'invite à jetter un œil à mes projets pour découvrir mon univers et mes dernières réalisations.
+          </p>
+        </section>
+        <!--
+          - service
+        -->
+        {% comment %} <section class="service">
+          <h3 class="h3 service-title">Compétences</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Front-end</h4>
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.Scripting Languages
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Back-end</h4>
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Framework</h4>
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.Photo & Image Sharing
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Logiciel</h4>
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section> {% endcomment %}
+        {% include 'competence.html' %}
+      </article>
+
